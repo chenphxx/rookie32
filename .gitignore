@@ -1,0 +1,10 @@
+# 文件夹 
+.vscode/
+DebugConfig/
+Listings/
+Objects/
+
+# 文件 
+*.uvguix.*
+*.uvoptx
+*.uvprojx
