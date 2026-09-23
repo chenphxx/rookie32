@@ -16,7 +16,7 @@
 
 ## 联系
 
-```http
+```mail
 chenphxx@xieg.top
 ```
 
