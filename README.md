@@ -14,10 +14,4 @@
 
 见`docs/` 
 
-## 联系
-
-```mail
-chenphxx@xieg.top
-```
-
 
