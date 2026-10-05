@@ -3,18 +3,19 @@
 #define USART1_TX GPIO_Pin_9  // TX PA9
 #define USART1_RX GPIO_Pin_10  // RX PA10
 
+
 // USART初始化
-void usart1_init(int rate)
+void usart1_init(uint32_t rate)
 {	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_USART1|RCC_APB2Periph_GPIOA, ENABLE);  // 使能引脚
 	
 	GPIO_InitTypeDef  GPIO_InitStructure;
-	// USART1_TX
+	// USART1_TX PA9
 	GPIO_InitStructure.GPIO_Pin = USART1_TX;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;  // 推挽输出
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-	// USART1_RX
+	// USART1_RX PA10
 	GPIO_InitStructure.GPIO_Pin = USART1_RX;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;  // 浮空输入
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
