@@ -1,4 +1,5 @@
 #include "stm32f10x.h"
+#include "delay.h"
 
 
 int main(void)
@@ -15,12 +16,13 @@ int main(void)
 
 	GPIO_Init(GPIOC, &GPIO_InitStructure);  // 初始化GPIOC的PC13引脚
 
+	delay_init();
 	
 	while (1)
 	{
-		GPIO_SetBits(GPIOC, GPIO_Pin_13);  // 设置PC13引脚为高电平，点亮LED灯
-		for (int i = 0; i < 1000000; i++);
-		GPIO_ResetBits(GPIOC, GPIO_Pin_13);  // 低电平, 熄灭
-		for (int i = 0; i < 1000000; i++);
+		GPIO_SetBits(GPIOC, GPIO_Pin_13);
+		delay_ms(1000);  // 延时500毫秒
+		GPIO_ResetBits(GPIOC, GPIO_Pin_13);
+		delay_ms(1000);
 	}
 }
