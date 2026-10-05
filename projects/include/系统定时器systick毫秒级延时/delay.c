@@ -5,7 +5,7 @@ volatile uint32_t g_ms = 0;
 
 void delay_init(void)
 {
-    SysTick_Config(SystemCoreClock / 1000);  // 1ms产生一次中断
+    SysTick_Config(SystemCoreClock / 1000);  // 72000000 / 1000, 表示1ms产生一次中断
 }
 
 void SysTick_Handler(void)

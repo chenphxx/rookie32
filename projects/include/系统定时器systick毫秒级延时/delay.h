@@ -6,7 +6,7 @@
 
 
 /**
- * @brief 初始化系统毫秒时间基准
+ * @brief 初始化延时基准
  */
 void delay_init(void);
 
