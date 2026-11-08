@@ -86,6 +86,12 @@ ARM Compiler Version 5下载地址:
 
 ![](assets/images/cd1dd7382cd1a1f123db7e739490c8763e7376eb.png)
 
+### ST-Link驱动
+
+工程编译完成后, 需要将其烧录进开发板中, 本项目使用st-link v2进行烧录, 首次使用需要安装对应驱动, 选择作为访客下载, 填写邮件, 点击邮件中的下载链接即可开始下载 
+
+下载地址: [STSW-LINK009 | 软件 - 意法半导体](https://www.st.com.cn/zh/development-tools/stsw-link009.html) 
+
 ## Visual Studio Code环境配置
 
 vscode中的配置相对简单, 首先需要配置好keil v5环境(vscode本质还是使用keil环境进行编译), 下载插件即可 
@@ -95,5 +101,3 @@ vscode中的配置相对简单, 首先需要配置好keil v5环境(vscode本质�
 在vscode插件市场搜索`Keil Assistant`安装即可, 安装完成后使用vscode打开工程目录, 即可在左下角使用插件, 可对工程进行编译以及下载 
 
 ![](assets/images/7ae5390b4785d0b9df6844db57a68586aa14b121.png)
-
-
