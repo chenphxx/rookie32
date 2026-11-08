@@ -3,6 +3,7 @@
 DebugConfig/
 Listings/
 Objects/
+RTE/
 
 # 文件 
 *.uvguix.*
